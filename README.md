@@ -5,9 +5,10 @@ Projeto criado para medir o tempo de resposta da API usando threads de plataform
 Recurso disponível a partir da versão 21 do java
 
 No arquivo `apllication.properties`:
-``
+```
 spring.threads.virtual.enabled=true
-``
+```
+
 ## Testes
 ### Threads SO
 100 requisições com 20 requisições em paralelo:
