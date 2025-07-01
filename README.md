@@ -59,3 +59,21 @@ Latency distribution:
 ## Referências
 - [Conheça o poder das Virtual Threads com Java e Spring Boot!](https://www.youtube.com/watch?v=a8gMokxIt4Q)
 - [Java Virtual Thread: Conceito e quando (ou não) usar](https://medium.com/@boschtechbr/java-virtual-thread-conceito-e-quando-ou-n%C3%A3o-usar-7c56238e951d)
+
+---
+_Threads virtuais_ são ótimas para aplicações com muitas operações de I/O (entrada/saída), como requisições de rede ou acesso a bancos de dados. Elas permitem que a aplicação lide com muitas requisições simultâneas de forma eficiente, sem sobrecarregar o sistema.
+
+No entanto, threads virtuais podem não ser a melhor opção para tarefas que exigem muito poder de processamento da CPU, como cálculos complexos ou algoritmos de inteligência artificial. Nesses casos, threads tradicionais podem ser mais eficientes, pois têm acesso direto aos recursos do sistema operacional.
+
+Em resumo:
+
+*Use threads virtuais quando:*
+
+- A aplicação tem muitas operações de I/O.
+- É necessário lidar com muitas requisições simultâneas.
+- A escalabilidade é importante.
+
+*Não use threads virtuais quando:*
+
+- A aplicação tem muitas tarefas que exigem muito poder de processamento da CPU.
+- A compatibilidade com versões antigas do Java é uma preocupação.

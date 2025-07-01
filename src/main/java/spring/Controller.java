@@ -1,4 +1,4 @@
-package br.com.miqueias.virtualThread;
+package spring;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
