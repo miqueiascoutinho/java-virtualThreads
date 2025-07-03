@@ -17,7 +17,7 @@ public class Controller {
     public ResponseEntity<Status> virtual() throws InterruptedException {
         Instant inicio = Instant.now();
 
-        Thread.sleep(200L);
+        Thread.sleep(400L);
         var result = new Status();
         Instant fim = Instant.now();
         System.out.println("Thread -> " + Thread.currentThread().getName() + " - Duração: " + Duration.between(inicio, fim).toMillis() + "ms");
